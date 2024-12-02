@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Main.css">
+    <link rel="stylesheet" href="Navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    
+</head>
+<body>
+     <!-- Navbar Container -->
+    <header>
+        <div>
+            <img src="logo.jpeg" alt="logo" id="logo">
+        </div>
+        <div class="navbar">
+            <nav class="row_navbar">
+                <div class="tutorials navigation">
+                    <ul class="select button">
+                        <li>Tutorials</li>
+                        <i class="fa-solid fa-arrow-down" id="arrowDown_icon" onclick="selectedIcon()"></i>
+                    </ul>
+                    <ul class="select tutorials_select" id="tutorials-menu">
+                        <li>Html</li>
+                        <li>Css</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+                <div class="nav navigation">
+                    Projects
+                </div>
+                <div class="nav navigation">
+                    Roadmaps
+                </div>
+                <div class="nav navigation">
+                    Contact 
+                </div>
+                <div class="bars_icon">
+                    <i class="fa-solid fa-bars" id="navbar-toggle" onclick="selectedBars()"></i>
+                </div>
+            </nav>
+        </div>
+        <div class="navbar-small-screen" id="side-navbar">
+            <nav class="column_navbar">
+                <div class="item-one">
+                   <i class="fa-solid fa-lightbulb" id="lightbulb"></i>
+                   <a href="#" class="info">Tutorials</a>
+                   <i class="fa-solid fa-arrow-down" id="arrow-icon" onclick="selectedDropDownIcon()"></i>
+                   <div id="collapse">
+                    <a href="#">Html</a>
+                    <a href="#">Css</a>
+                    <a href="#">JavaScript</a>
+                   </div>
+                </div>
+                <div class="navbar-item">
+                    <i class="fa-solid fa-folder"></i>
+                    <a href="#" class="info">Projects</a>
+                </div>
+                <div class="navbar-item">
+                    <i class="fa-solid fa-map"></i>
+                    <a href="#" class="info">Roadmaps</a>
+                </div>
+                <div class="navbar-item">
+                    <i class="fa-solid fa-comments"></i>
+                    <a href="#" class="info">Contact</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- End Of Navbar Container -->
+    <!-- Main Container -->
+    <main>
+        <!-- Section One : Introduction -->
+        <section class="section_one">
+            <div class="introduction">
+                <h2 class="introduction-title">Start your coding journey here!..</h2>
+                <p class="introduction_paragraph">Find everything you need to start coding-all in one place .Our platform brings together the best YouTube videos to help you learn <span style="color: blue; font-size: 20px;">Html Css & JavaScript</span> , from beginner basics to advanced concepts.Additionally, we provide tutorials,hands-on projects,and detailed roadmaps to assist you in your learning journey.  </p>
+            </div>
+            <div class="introduction_icon">
+               <img src="code img for intro.jpg" id="code">
+            </div>
+        </section>
+        <!-- Section Two : definition of HTML CSS & JavaScript and the relationship between them -->
+            <!-- definition of Html Css & JavaScript -->
+        <section class="section_two">
+            <h2 class="definition-title">What is Html Css and JavaScript</h2>
+            <div class="definition-container">
+                <div class="definition" id="html-definition">
+                    <div class="definition-image">
+                        <img src="html-logo.png" alt="html-logo">
+                    </div>
+                    <div class="definition-text">
+                        <h4><span class="color-title">HTML</span>(<span class="color-title">H</span>ypertext<span class="color-title">M</span>arkup<span class="color-title">L</span>anguage)</h4>
+                        <ul class="defining_sentences">
+                            <li>Is a markup language for the web that defines the structure of web pages.</li>
+                            <li>It is one of most basic building blocks of every website.</li>
+                            <li>It's crucial to learn if you want to have a career in web development.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="definition">
+                    <div class="definition-image">
+                        <img src="css-logo.PNG" alt="css-logo">
+                    </div>
+                    <div class="definition-text">
+                        <h4> <span class="color-title">CSS</span>(<span class="color-title">C</span>ascading<span class="color-title">S</span>tyle<span class="color-title">S</span>heets)</h4>
+                        <ul class="defining_sentences">
+                            <li>Is a language in web development that enhances the presentation of HTML elements.</li>
+                            <li>By applying styles like color, layout, and spacing , CSS makes web pages visually appealing and responsive to various screen sizes</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="definition" id="javascript-definition">
+                    <div class="definition-image">
+                        <img src="js-logo.png" alt="js-logo">
+                    </div>
+                    <div class="definition-text">
+                        <h4><span class="color-title">JavaScript</span></h4>
+                        <ul class="defining_sentences">
+                            <li>Is a programming language used to add interactivity and dynamics to web pages.</li>
+                            <li>Allowing for features like intractive menus, animations, and enhancing user experience</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+                <!-- The relationship between them -->
+            <div class="relationship-section">
+                <h2 class="relationship-title">The Relationship Between Css Html and JavaScript</h2>     
+                <div class="connection-container">
+                    <div class="relationship" id="html-relationship">
+                        <img src="html-role.png" class="relationship-image">
+                        <p class="relationship-text"><span class="color-title">Html</span> builds the instructure of the webpages</p>
+                    </div>
+                    <div class="relationship">
+                        <img src="css-role.png" class="relationship-image">
+                        <p class="relationship-text"><span class="color-title">Css</span> styles and beautifies the appearance </p>
+                    </div>
+                    <div class="relationship" id="javascript-relationship">
+                        <img src="js-role.png" class="relationship-image">
+                        <p class="relationship-text"><span class="color-title">JavaScript</span> adds interactivity and logic </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Benefits to learn Html Css & Javascript -->
+        <section class="section-three">
+            <h2 class="benefits-title">Benefits To Learn Html Css and JavaScript</h2>
+            <div class="benefits-container box-one">
+                <div class="the_benefits">
+                    <div class="benefits-card">
+                        <div class="front-card"> Creativity Unleashed</div>
+                        <div class="back-card">HTML builds the structure of pages, while Css adds an aesthetic touch, and JavaScript enables live interaction.Creativity transforms into a digital reality, opening unlimited horizons for design and interaction</div>
+                    </div>
+                </div>
+                <div class="the_benefits">
+                    <div class="benefits-card">
+                        <div class="front-card">Gateway to Web Dev</div>
+                        <div class="back-card">Html Css and JavaScript form the foundation of web development, seamlessly integrating to create web pages that combine visual appeal with dynamic interactivity</div>
+                    </div>
+                </div>
+            </div>
+            <div class="benefits-container box-two">
+                <div class="the_benefits">
+                    <div class="benefits-card">
+                        <div class="front-card">Career Oppportunities</div>
+                        <div class="back-card">The job market is seeing an increasing demand for web development skills.Mastery of technologies like Html css and javascript opens job oppportunities in front-end development, user experience design, and digital content creation.</div>
+                    </div>
+                </div>
+                <div class="the_benefits">
+                    <div class="benefits-card">
+                        <div class="front-card">Web Empowerment</div>
+                        <div class="back-card">HTML Css and javascript help simplify how the web works, enabling individuals to interact confidently with digital environments.By learning how to structure web content using these technologies, students become more aware of the technology that powers the internet.</div>
+                    </div>
+                </div>
+            </div>
+        </section> 
+        <!-- The four best code editors -->
+        <section class="section-four">
+            <h2 class="editors-title">The four best code editors</h2>
+            <div class="code-editors-container">
+                <div class="the-code-editor margin-to-editor">
+                    <div>
+                        <img src="vs code.png" class="editor_image">
+                    </div>
+                    <ul class="pros-and-cons">
+                        <li><span class="color-title">Advantages Of Visual Code :</span></li>
+                        <li>free and open source</li>
+                        <li>extensive library of extensions</li>
+                        <li>supports multiple programming languages</li>
+                        <li><span class="color-title">Disadvantages :</span></li>
+                        <li>May consume significant resources on low-end devices</li>
+                    </ul>
+                </div>
+                <div class="the-code-editor">
+                    <div>
+                        <img src="atom.png" class="editor_image">
+                    </div>
+                    <ul class="pros-and-cons">
+                        <li><span class="color-title">Advantages Of Atom:</span></li>
+                        <li>free</li>
+                        <li>strong integration with GitHub</li>
+                        <li>Easy-to-use interface</li>
+                        <li><span class="color-title">Disadvantages :</span></li>
+                        <li>can be slow on low-end devices</li>
+                        <li>Official development has been discontinued</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="code-editors-container">
+                <div class="the-code-editor margin-to-editor">
+                    <div>
+                        <img src="sublime text.webp" class="editor_image">
+                    </div>
+                    <ul class="pros-and-cons">
+                        <li><span class="color-title">Advantages Of Sublime Text :</span></li>
+                        <li>lightweight and very fast </li>
+                        <li>supports multi-cursor editing</li>
+                        <li>rich package library</li>
+                        <li><span class="color-title">Disadvantages :</span></li>
+                        <li>Not fully free</li>
+                        <li>lacks built-in debugging</li>
+                    </ul>
+                </div>
+                <div class="the-code-editor">
+                    <div>
+                        <img src="notepad++.webp" class="editor_image">
+                    </div>
+                    <ul class="pros-and-cons">
+                        <li><span class="color-title">Advantages Of NotePad++:</span></li>
+                        <li>Extremely lightweight</li>
+                        <li>Supports many basic programming languages</li>
+                        <li>completely free</li>
+                        <li><span class="color-title">Disadvantages :</span></li>
+                        <li>Only available on windows</li>
+                        <li>Limited features compared to modern editors</li>
+                    </ul>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="Navbar.js"></script>
+    <script src="startCoding.js"></script>
+</body>
+</html>

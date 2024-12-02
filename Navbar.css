@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/*=== Navbar Container ===*/
+header{
+    background-color: black;
+    color: #fff;   
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    position: relative;
+    z-index: 1;
+}
+#logo{
+    animation-name: animate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes animate{
+    50%{
+        transform: translateX(22px);
+    }
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 100px;
+}
+.navbar .row_navbar{
+    display: flex;
+}
+.navbar .row_navbar .nav{
+    padding: 5px 15px;
+}
+.navbar .row_navbar .nav:hover, .button:hover{
+    background-color: goldenrod;
+    border-radius: 5px;
+}
+.navbar .row_navbarv div.navigation{
+    margin-left: 35px;
+    font-size: 18px;
+} 
+nav.row_navbar .tutorials .select{
+    list-style: none;
+    text-align: center;
+    width: 120px;
+}
+.row_navbar .tutorials .button{
+    display: flex;
+    justify-content: space-around;
+    padding: 5px 8px;
+}
+.row_navbar .tutorials .button #arrowDown_icon{
+    padding: 3px 4px;
+    margin-left: 16px;
+}
+.tutorials_select{
+    position: relative;
+    position: absolute;
+    top: 70px;
+    border-radius: 2px;
+    padding: 8px;
+    font-style: italic;
+    background-color: black;
+    height: 110px;
+    display: none;
+}
+.tutorials_select li{
+    padding-bottom: 10px;
+}
+.tutorials_select li:hover{
+    background-color: goldenrod;
+}
+.active{
+    display: block;
+}
+.rotate{
+    transform: rotate(180deg);
+}
+.bars_icon #navbar-toggle{
+    font-size: 30px;
+    display: none;
+}
+@media(max-width:600px){
+    .navbar-small-screen{
+        margin-left: -330px;
+        opacity: 0;
+        transition: 1s;
+    }
+    header{
+        position: fixed;
+    }
+    #logo{
+        animation: none;
+    }
+    .navigation{
+        display: none;
+    }
+    .bars_icon #navbar-toggle{
+        display: block;
+    }
+    .navbar .row_navbar{
+        display: flex;
+        padding: 0 0 ;
+    }
+    .navbar .row_navbar div.navigation{
+        margin-left: 0px;
+    } 
+    .show-sidebar{
+        margin-left: 0 ;
+        opacity: 1 !important;
+    }
+}
+/*=== Navbar Menu in Small screen (600px and down)===*/ 
+.navbar-small-screen{
+    position: absolute;
+    color: white;
+    background-color: gray;
+    transform: translateY(80px);
+    width: 68%;
+    font-size: 20px;
+    padding: 20px 0 20px 0;
+    opacity: 0;
+}
+.navbar-small-screen .column_navbar .navbar-item, .item-one{
+    list-style: none;
+    display: grid;
+    grid-template-columns: 40px max-content max-content;
+    margin: 0 20px 0 20px;
+    padding: 20px 20px;
+    border-radius: 10px;
+}
+#arrow-icon{
+    margin-left: 40px;
+}
+.navbar-small-screen .column_navbar .navbar-item i{
+    margin-right: 20px;
+} 
+.navbar-item:hover, .item-one:hover{
+    background-color: goldenrod;
+    color: black;
+}
+.navbar-small-screen .info{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+#collapse a{
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 15px;
+}
+#collapse{
+    margin-top: 20px;
+    transform: translateX(50px);
+    display: none;    
+}
+#collapse a:hover , .info:hover{
+    text-decoration: underline;
+    color: purple;
+}
+.activeMenu{
+    display: block !important;
+}
+.rotateIcon{
+    transform: rotate(180deg);
+}
+@media(min-width:601px) and (max-width:837px){
+    header{
+        width:100%;
+        position: fixed;
+    }
+    #logo{
+        animation: none;
+        width: 190px;
+        height: 80px;
+    }
+    .navbar .row_navbar{
+        display: flex;
+        padding: 0 0 ;
+    }
+    .navbar .row_navbar div.navigation{
+        margin-left: 5px;
+    } 
+}
+/*=== End of Navbar Container ===*/

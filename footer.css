@@ -9,6 +9,7 @@ body{font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucid
 footer{
     height: 100vh;
     display: grid;
+    margin-top: 100px;
 }
 footer .end-of-page{
     padding: 40px 25px;
@@ -39,41 +40,24 @@ footer .end-of-page h2{
     }
 }
 .end-of-page h2.asking_title{
-   animation: animate-title 5s linear infinite;
-   color: #0e3742;
-   -webkit-box-reflect: below 1px linear-gradient(transparent,#0004);
-   line-height: 0.70em;
-}
-@keyframes animate-title{
-    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%{
-    color: #0e3742;
-    text-shadow: none;
-}
-    18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%{
-    color: #fff;
-    text-shadow: 
-    0 0 10px #03bcf4 ,
-    0 0 20px #03bcf4 ,
-    0 0 40px #03bcf4 ,
-    0 0 80px #03bcf4 ,  
-    0 0 160px #03bcf4 ;    
-}
+    color: goldenrod;
+    text-shadow: 2px 2px 2px goldenrod;
 }
 .end-of-page p.footer-paragh{
-    margin-top: 35px;
+    margin-top: 30px;
     font-size: 18px;
 }
 .end-of-page .contact{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-top: 35px;
+    margin-top: 20px;
 }
 .contact .social_contact .contact-details{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px 20px;
-    margin: 10px 10px;
+    padding: 15px 15px;
+    
     cursor: pointer;
 }
 .contact .social_contact .contact-details i.icon{
@@ -97,5 +81,6 @@ footer .end-of-page h2{
 }
 .contact .social_contact .contact-details .info:hover{
     color: goldenrod;
+    text-decoration: none;
 }
 /*=== End Of Footer Container ===*/

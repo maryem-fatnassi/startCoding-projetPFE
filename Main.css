@@ -211,15 +211,16 @@ main .section_one .introduction_icon #code{
 }
 .section-three .the_benefits{
     position: relative;
-    width: 300px;
-    height: 350px;
-    margin: 0px 150px;
+    width: 400px;
+    height: 200px;
+    margin-right: auto;
+    margin-left: auto;
 }
-.section-three .box-one{
+.box-one{
     margin-top: 160px;
 }
-.section-three .box-two{
-    margin-top: 140px;
+.box-two{
+     margin-top: 40px;
 }
 .section-three .benefits-container .the_benefits .benefits-card{
     position: absolute;
@@ -233,23 +234,24 @@ main .section_one .introduction_icon #code{
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-    background-color: rgba(128, 128, 128, 0.24);
+    background-color: darkblue;
+    color: white;
     border-radius: 10px;
     font-size: 23px;
     display: flex;
     align-items: center;
     justify-content: center;
-    text-shadow: 2px 2px 4px black 
-    ;
-    box-shadow: 2px 2px 4px black;
+    text-shadow: 2px 2px 2px burlywood,
+                 2px 2px 4px  burlywood,
+                 2px 2px 8px burlywood,
+                 2px 2px 16px burlywood;
 }
 .section-three .benefits-container .the_benefits .back-card{
     position: absolute;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-    background-color:rgba(0, 0, 255, 0.664);
-    color: white;
+    background-color:burlywood;
     transform: rotateY(180deg);
     border-radius: 10px;
     font-size: 18px;
@@ -264,15 +266,12 @@ main .section_one .introduction_icon #code{
 }
 /*-- End Of section three --*/ 
 /*-- Section four : The four best code editors--*/
-.section-four{
-    background-color: rgba(0, 0, 0, 0.164);
-}
 .section-four .editors-title{
     text-align: center;
     font-size: 35px;
     color: black;
     -webkit-text-stroke: 2px blue;
-    margin-top: 200px;
+    margin-top: 150px;
     font-style: italic;
     padding-top:40px;
 }
@@ -282,30 +281,35 @@ main .section_one .introduction_icon #code{
     border-radius: 50%;
     padding: 15px 15px;
     box-shadow: 2px 2px 4px gray;
-    text-align: left;
     margin-left: 10px;
     margin-top: 20px;
 }
 .section-four .code-editors-container .the-code-editor{
-    margin-top: 150px;
     display: flex;
-    width: 300px;
-    flex-direction: column;
-    background-color: white;
+    width: 500px;
+    background-color:rgba(192, 192, 192, 0.185);
     border-radius: 10px;
     box-shadow: 2px 2px 4px black;
+    margin-right: 40px;
 }
 .section-four .code-editors-container .the-code-editor .pros-and-cons{
    list-style: none;
-   text-align: center;
-   margin-top: 10px;
+   margin-top: 20px;
    padding-bottom: 20px;
    line-height: 1.5;  
+   margin-left: 28px;
 }
 .section-four .code-editors-container{
     display: flex;
     justify-content: center;
 }
-.section-four .code-editors-container .margin-to-editor{
-    margin-right: 150px;
+.section-four .code-editors-container .the-code-editor div a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 18px;
+    font-style: italic;
+    padding-bottom: 8px;
+}
+.section-four .code-editors-container .the-code-editor div a:hover{
+    color: blue;
 }

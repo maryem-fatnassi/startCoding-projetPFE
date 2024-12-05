@@ -7,12 +7,12 @@ body{font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucid
 }
 /*=== Footer Container ===*/
 footer{
-    height: 100vh;
+    height: 60px;
     display: grid;
     margin-top: 100px;
 }
 footer .end-of-page{
-    padding: 40px 25px;
+    padding: 18px 15px;
     background-color: black;
     color: #fff;
     text-align: center;
@@ -50,14 +50,13 @@ footer .end-of-page h2{
 .end-of-page .contact{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 .contact .social_contact .contact-details{
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 15px 15px;
-    
     cursor: pointer;
 }
 .contact .social_contact .contact-details i.icon{

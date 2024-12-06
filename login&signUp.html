@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login&signUp.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <!-- Login & sign-up page -->
+    <div class="authentication-container">
+        <video controls autoplay loop muted src="computer video.mp4"></video>
+        <div class="auth-buttons">
+           <button id="sign_In" >Sign In</button>
+           <button id="sign_Up" >Sign Up</button>
+       </div>
+        <!-- Login / Sign up Menus -->
+        <main>
+            <div class="menus">
+              <div class="moveMenus">
+                 <!-- Login Form Container -->
+                 <div class="sign" id="login"> 
+                     <div class="link_sign">
+                         <p>Don't have an account?</p>
+                         <a href="#" id="signUp_link" class="authentication_link">Sign Up</a>
+                     </div>
+                     <div class="title">
+                         Login
+                      </div>
+                     <form class="inputs">
+                         <div class="user">
+                             <i class="fa-solid fa-user"></i>
+                             <input type="email" placeholder="Email" id="email-login">
+                         </div>
+                         <div class="user">
+                             <i class="fa-solid fa-lock"></i>
+                             <input type="password" placeholder="Password" id="password-login">
+                           </div>
+                           <div class="user">
+                              <button class="btn" id="submit">Sign in</button>
+                          </div>
+                      </form>
+                    </div>     
+                    <!-- Sign Up Form Container --> 
+                    <div class="sign" id="sign-up">
+                      <div class="link_sign">
+                         <p>Don't have an account?</p>
+                         <a href="#" id="singIn_link" class="authentication_link">Login</a>
+                      </div>
+                      <div class="title">
+                          Sign-Up
+                       </div>
+                      <form class="inputs">
+                          <div class="user">
+                             <i class="fa-solid fa-user"></i>
+                             <input type="text" placeholder="Email" id="email-signUp">
+                          </div>
+                          <div class="user">
+                             <i class="fa-solid fa-lock"></i>
+                             <input type="password" placeholder="Password" id="password-signUp">
+                          </div>
+                          <div class="user">
+                              <button class="btn" id="submit-signUp">Sign in</button>
+                          </div>
+                        </form>
+                  </div>  
+              </div>      
+          </div>          
+      </main>              
+  </div>
+  <script src="login&signUp.js"></script>
+  <script type="module" src="login.js"></script>
+  <script type="module" src="signUp.js"></script>
+</body>
+</html>

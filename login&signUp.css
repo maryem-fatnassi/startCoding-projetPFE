@@ -1,0 +1,139 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.authentication-container{
+    position: relative;
+}
+/*=== background video ===*/
+.authentication-container video{
+    width: 100%;
+    height: 637px;
+    object-fit: cover;
+    pointer-events: none;
+    opacity: .80;
+}
+/*=== Authentication Buttons ===*/
+.auth-buttons{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+}
+.auth-buttons button{
+    padding: 8px 35px;
+    border-radius: 30px;
+    border: none;
+    margin: 0 10px;
+    background-color: #ffffff8f;
+    cursor: pointer;
+}
+.auth-buttons button:hover{
+    background-color: hwb(0 100% 0% / 0.719);
+}
+/*=== Login & signUp Form Container ===*/
+.authentication-container main{
+    width: 100%;
+    position: absolute;
+    top:0px;
+}
+main{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+.menus{
+    width: 409px;
+    overflow: hidden;
+}
+.moveMenus{ 
+   display: flex;
+   transition: .5s;
+}
+.menus .moveMenus .sign{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.menus .moveMenus .sign:not(button){
+    color: #fff;
+}
+.sign .link_sign{
+    display: flex;
+    align-items: center;
+}
+.sign .authentication_link:hover{
+    color: purple;
+}
+a{  
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+}
+.menus .moveMenus .sign{
+    row-gap: 30px;
+}
+.title{
+    font-size: 30px;
+    font-weight: bolder;
+}
+/* === User data input field for login & sign-up ===*/
+.sign .inputs .user, .name{
+    display: flex;
+    position: relative;
+    width: 409px;
+    background-color:#ffffff70;
+    margin: 15px 0 0;
+    border-radius: 30px;
+    height: 50px;
+}
+.sign .inputs .user input, .btn{
+    width: 100%;
+    outline: none;
+    border-radius: 30px;
+    border: none;
+    background-color: #ffffff00;
+    height: 100%;
+}
+.sign .inputs .user .btn:hover{
+    background-color: black;
+    color: white;
+}
+.sign .inputs .user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0;
+}
+.sign .inputs .user input{
+    padding-left: 20px;
+    margin-left: 10px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    padding: 5px 0;
+}
+.sign .inputs .user button{
+    padding: 5px 0;
+}
+.sign .inputs .user i, .name i{
+    color: #fff;
+    margin-left: 24px;
+}
+.sign input::placeholder{
+    color: #fff;
+}
+.sign .inputs .user , .btn{
+    font-size: 19px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.sign .userName{
+    display: flex;
+}
+.sign .name input{
+    background-color: #ffffff00;
+    outline: none;
+    border: none;
+}

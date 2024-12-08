@@ -20,3 +20,17 @@
   }
 // End Of Navbar..
 
+// Main Container..
+  // Using Swiper in HTML tutorials
+    const swiper = new Swiper('.swiper',{
+      loop: true,
+      autoplay : {
+        delay : 3000,
+      },
+      slidesPerView : 5,
+      spaceBetween : 20,
+      navigation:{
+        nextEl: '.button-next',
+        prevEl:'.button-prev',
+      }
+    });   

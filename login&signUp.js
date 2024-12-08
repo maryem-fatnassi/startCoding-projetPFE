@@ -7,20 +7,22 @@ function addLine(){
 }
 underLine.forEach(l => l.addEventListener('click',addLine))
 // click buttons to move the menus
-const signUpBtn = document.getElementById('sign_Up')
-const signInBtn = document.getElementById('sign_In')
-const signUpLink = document.getElementById('signUp_link')
-const signInLink = document.getElementById('singIn_link')
-const formsWrapper = document.querySelector('.moveMenus')
-function translateMenu(){
-    formsWrapper.style.transform='translateX(-409px)' 
+const signUpBtn = document.getElementById('sign_UpButton');
+const signInBtn = document.getElementById('sign_InButton');
+console.log(signInBtn)
+console.log(signUpBtn)
+const signUpLink = document.getElementById('signUp_link');
+const signInLink = document.getElementById('singIn_link');
+const formsWrapper = document.querySelector('.moveMenus');
+function signUpMenu(){
+    formsWrapper.style.transform='translateX(-409px)'
 }
-function login(){
+function loginMenu(){
     formsWrapper.style.transform='translateX(0px)'
 }
-signUpBtn.addEventListener('click',translateMenu)
-signInBtn.addEventListener('click',login)
+signUpBtn.addEventListener('click',signUpMenu);
+signInBtn.addEventListener('click',loginMenu);
 // click links to move the menus
-signUpLink.addEventListener('click',translateMenu)
-signInLink.addEventListener('click',login)
+signUpLink.addEventListener('click',signUpMenu);
+signInLink.addEventListener('click',loginMenu);
 

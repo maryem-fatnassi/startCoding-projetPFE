@@ -17,7 +17,7 @@ header{
     width: 100%;
     height: 80px;
     position: relative;
-    z-index: 1;
+    z-index: 2;
 }
 #logo{
     animation-name: animate;
@@ -204,32 +204,25 @@ main .tutorials-container{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 150px;
     justify-content: space-between;
 }
 main .tutorials-container .tutorial-videos{
-    border: 1px solid black;
     width: 80%;
     padding: 10px 10px;
-    height: 30%;
+    height: 200px;
+    margin-bottom: 20px;
 }
-main .tutorials-container .tutorial-videos .swiper-container .swiper .swiper-wrapper{
+.swiper-wrapper{
     display: flex;
 }
-.swiper-container .swiper .swiper-wrapper .swiper-slide{
-    height: 100%;
-    background-color: cadetblue;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-}
-.button-next, .button-prev{
+.button-next-one, .button-prev-one, .button-next-two, .button-prev-two, .button-next-three, .button-prev-three{
     top: auto;
 }
 .swiper-wrapper{
     height: 100%;
 }
-.swiper{
+.swiper-one, .swiper-two, .swiper-three{
     height: 100%;
 }
 .swiper-container{
@@ -239,5 +232,41 @@ main .tutorials-container .tutorial-videos .swiper-container .swiper .swiper-wra
     padding: 10px 50px;
     box-sizing: border-box;
     overflow: hidden;
-    background-color: crimson;
+    position: relative;
+    height: 90%;
+}
+.swiper-slide{
+    background-color: rgba(192, 192, 192, 0.541);
+    height: 100%;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    z-index: 5;
+}
+.text-slide h2 , p{
+    font-size: 18px;
+    text-align: center;
+}
+.image-slide{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.tutorials-title{
+    font-size: 33px;
+    margin-bottom: 20px;
+    font-style: italic;
+    color:brown;
+    -webkit-text-stroke: 2px brown;
+}
+.tutorials-container .tutorial-videos h3{
+    font-size: 25px;
+    font-style: italic;
+    color:blue;
+    margin-top: 20px;
+    margin-bottom: 6px;
+    font-family: cursive;
+    margin-left: 45px;
 }

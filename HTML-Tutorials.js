@@ -21,16 +21,37 @@
 // End Of Navbar..
 
 // Main Container..
-  // Using Swiper in HTML tutorials
-    const swiper = new Swiper('.swiper',{
+  // Using Swiper in HTML tutorials 
+    // * Poular Channels *
+    const swiperOne = new Swiper('.swiper-one',{
       loop: true,
-      autoplay : {
-        delay : 3000,
-      },
-      slidesPerView : 5,
+      slidesPerView : 4,
       spaceBetween : 20,
       navigation:{
-        nextEl: '.button-next',
-        prevEl:'.button-prev',
+        nextEl: '.button-next-one',
+        prevEl:'.button-prev-one',
       }
     });   
+    // * Long Tutorials *
+    const swiperTwo = new Swiper('.swiper-two',{
+      loop: true,
+      slidesPerView : 4,
+      spaceBetween : 20,
+      navigation:{
+        nextEl: '.button-next-two',
+        prevEl:'.button-prev-two',
+      }
+    });   
+    // * Playlist *
+    const swiperThree = new Swiper('.swiper-three',{
+      loop: true,
+      slidesPerView : 4,
+      spaceBetween : 20,
+      navigation:{
+        nextEl: '.button-next-three',
+        prevEl:'.button-prev-three',
+      }
+    });   
+  
+  // Use YT Data API in the sliders
+    

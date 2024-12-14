@@ -222,9 +222,6 @@ main .tutorials-container .tutorial-videos{
 .swiper-wrapper{
     height: 100%;
 }
-.swiper-one, .swiper-two, .swiper-three{
-    height: 100%;
-}
 .swiper-container{
     display: flex;
     justify-content: center;
@@ -245,14 +242,21 @@ main .tutorials-container .tutorial-videos{
     flex-direction: column;
     z-index: 5;
 }
-.text-slide h2 , p{
-    font-size: 18px;
+.title-channel, .number-of-followers{
+    font-size: 17px;
     text-align: center;
+    font-style: italic;
+}
+.number-of-followers{
+    color: red;
+    font-family: sans-serif;
 }
 .image-slide{
     width: 80px;
     height: 80px;
     border-radius: 50%;
+    margin-top: 7px;
+    margin-left: 7px;
 }
 .tutorials-title{
     font-size: 33px;

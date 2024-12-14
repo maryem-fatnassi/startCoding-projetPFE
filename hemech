@@ -23,3 +23,132 @@
  <img src="html photo with green background.png" class="swiper-slide">
  <img src="html photo with blue bg.jpg" class="swiper-slide">
  <img src="html photo with black bg.png" class="swiper-slide">  
+
+
+
+
+
+
+
+
+ AIzaSyCxNesqAQpOqwG9X89Or2-VVQTmmfcLAv8(yt data api key)
+
+
+
+ const apiKey =  'AIzaSyB1bR4Vc2gsucWVY7SokFXObkIUKug6M04';
+ const ChannelIds =[
+    'UC-JQzTHQrVA8j-tamvy66fw',
+    'UCv9bWHC0DIn-Xb7ALNoOGWQ'
+ ];
+
+ const url = `https://www.googleapis.com/youtube/v3/channels?part=snippet,statistics&id=${ChannelIds.join(",")}&key=${apiKey}`;
+ fetch(url)
+ .then(  
+
+ )
+ .then(
+   data =>{
+     data.items.forEach(
+       channel => {
+     const channelName = channel.snippet.title;
+     const channelImage = channel.snippet.thumbnails.default.url;
+     const subscriberCount = channel.statistics.subscriberCount;
+     
+     document.getElementById('channelName').textContent = `${channelName}`;
+     document.getElementById('ChannelImage').src = channelImage;
+     document.getElementById('subscriberCount').textContent = `${subscriberCount}`;
+
+     document.getElementById('channelName-one').textContent = `${channelName}`;
+     document.getElementById('ChannelImage-one').src = channelImage;
+     document.getElementById('subscriberCount-one').textContent = `${subscriberCount}`;
+   }
+ )
+ .catch(
+   error => console.error('Error :', error)
+ )});
+
+
+
+ <div class="swiper-slide">
+  <img class="image-slide" id="ChannelImage">
+  <div class="text-slide">
+     <h2 class="title-channel" id="channelName"></h2>
+     <p class="number-of-followers" id="subscriberCount"></p>
+  </div>
+</div>
+<div class="swiper-slide">
+  <img class="image-slide" id="ChannelImage-one">
+  <div class="text-slide">
+     <h2 class="title-channel" id="channelName-one"></h2>
+     <p class="number-of-followers" id="subscriberCount-one"></p>
+  </div>
+</div>
+<div class="swiper-slide">
+   <img src="html photo with a person.jpg" class="image-slide">
+  <div class="text-slide">
+     <h2 class="title-channel">Merciful Servant</h2>
+     <p class="number-of-followers">4.33 M</p>
+  </div>
+</div>
+<div class="swiper-slide">
+  <img src="why-you-should-choose-html5.jpg" class="image-slide">
+ <div class="text-slide">
+     <h2 class="title-channel">Merciful Servant</h2>
+     <p class="number-of-followers">4.33 M</p>
+  </div>
+</div>
+<div class="swiper-slide">
+  <img src="html photo witth a hand.jpg" class="image-slide">
+ <div class="text-slide">
+     <h2 class="title-channel">Merciful Servant</h2>
+     <p class="number-of-followers">4.33 M</p>
+  </div>
+</div>
+<div class="swiper-slide">
+  <img src="computer.jpg" class="image-slide">
+  <div class="text-slide">
+     <h2 class="title-channel">Merciful Servant</h2>
+     <p class="number-of-followers">4.33 M</p>
+  </div>
+</div>
+<div class="swiper-slide">
+  <img src="science.png" class="image-slide">
+  <div class="text-slide">
+      <h2 class="title-channel">Merciful Servant</h2>
+      <p class="number-of-followers">4.33 M</p>
+  </div>
+</div>
+<div class="swiper-slide">
+  <img src="html photo with green background.png" class="image-slide">
+  <div class="text-slide">
+     <h2 class="title-channel">Merciful Servant</h2>
+     <p class="number-of-followers">4.33 M</p>
+  </div>
+</div>
+<div class="swiper-slide">
+  <img src="html photo with blue bg.jpg" class="image-slide">
+  <div class="text-slide">
+     <h2 class="title-channel">Merciful Servant</h2>
+     <p class="number-of-followers">4.33 M</p>
+  </div>
+</div>
+<div class="swiper-slide">
+  <img src="html photo with black bg.png" class="image-slide">
+  <div class="text-slide">
+     <h2 class="title-channel">Merciful Servant</h2>
+     <p class="number-of-followers">4.33 M</p>
+  </div>
+</div>
+
+
+
+
+<div class="swiper-container">
+  <div class="swiper swiper-one">
+      <div class="swiper-wrapper">
+          
+      </div>  
+  </div>
+  <div class="button-next-one swiper-button-next"></div>
+  <div class="button-prev-one swiper-button-prev"></div>
+</div>

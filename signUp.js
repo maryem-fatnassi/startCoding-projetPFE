@@ -12,8 +12,8 @@ document.addEventListener("DOMContentLoaded", () => {
   submit.addEventListener("click", (e) => {
     e.preventDefault();
     const signUp = document.getElementById('sign-up');
-    const email = document.getElementById("email-signUp").value;
-    const password = document.getElementById("password-signUp").value;
+    const email = document.getElementById('email-signUp').value;
+    const password = document.getElementById('password-signUp').value;
    
     createUserWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {

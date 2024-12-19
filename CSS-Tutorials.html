@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Tutorials</title>
+    <link rel="stylesheet" href="CSS-Tutorials.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+</head>
+<body>
+    <!-- Navbar Container -->
+    <header>
+        <div>
+            <img src="logo.jpeg" alt="logo" id="logo">
+        </div>
+        <div class="navbar">
+            <nav class="row_navbar">
+                <div class="tutorials navigation">
+                    <ul class="select button">
+                        <li>Tutorials</li>
+                        <i class="fa-solid fa-arrow-down" id="arrowDown_icon"></i>
+                    </ul>
+                    <ul class="select tutorials_select" id="tutorials-menu">
+                        <li>Html</li>
+                        <li>Css</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+                <div class="nav navigation">
+                    Projects
+                </div>
+                <div class="nav navigation">
+                    Roadmaps
+                </div>
+                <div class="nav navigation">
+                    Contact 
+                </div>
+            </nav>    
+        </div>        
+    </header> 
+    <!-- End Of Navbar Container -->
+        <!-- Main Container : CSS Tutorials -->
+    <main>
+        <div class="tutorials-container">
+            <h2 class="tutorials-title">CSS Tutorials</h2>
+            <p class="guidance-sentence">Click on the image to go to the video..</p>
+            <div class="tutorial-videos">
+                <h3>Playlists :</h3>
+                <div class="swiper-container">
+                   <div class="swiper swiper-one">
+                      <div class="swiper-wrapper" id="swiper_wrapper">
+
+                      </div>  
+                   </div>
+                   <div class="button-next-one swiper-button-next"></div>
+                   <div class="button-prev-one swiper-button-prev"></div>
+                </div>
+            </div>
+            <div class="tutorial-videos">
+                <h3>Long Tutorials :</h3>
+                <div class="swiper-container">
+                    <div class="swiper swiper-two">
+                       <div class="swiper-wrapper" id="longTutorials-swiper-wrapper">
+                        
+                       </div>
+                    </div>   
+                    <div class="button-next-two swiper-button-next"></div>
+                    <div class="button-prev-two swiper-button-prev"></div>
+                </div>
+            </div>
+            <div class="tutorial-videos">
+                <h3> Tips and Tricks :</h3>
+                <div class="swiper-container">
+                    <div class="swiper swiper-three">
+                       <div class="swiper-wrapper" id="tipsTricksVideo">
+                       
+                       </div>
+                    </div>
+                    <div class="button-next-three swiper-button-next"></div>
+                    <div class="button-prev-three swiper-button-prev"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- End Of Main Container -->           
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="YT Data API.js"></script>
+    <script type="module" src="CSS-Tutorials.js"></script>
+</body>
+</html>

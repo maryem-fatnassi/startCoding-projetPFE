@@ -19,7 +19,7 @@
                 <div class="tutorials navigation">
                     <ul class="select button">
                         <li>Tutorials</li>
-                        <i class="fa-solid fa-arrow-down" id="arrowDown_icon" onclick="selectedIcon()"></i>
+                        <i class="fa-solid fa-arrow-down" id="arrowDown_icon"></i>
                     </ul>
                     <ul class="select tutorials_select" id="tutorials-menu">
                         <li>Html</li>
@@ -41,7 +41,7 @@
                 </div>
             </nav>
         </div>
-        <div class="navbar-small-screen" id="side-navbar">
+        <div class="navbar-small-screen" id="side-navbar" style="display: none;">
             <nav class="column_navbar">
                 <div class="item-one">
                    <i class="fa-solid fa-lightbulb" id="lightbulb"></i>
@@ -68,11 +68,14 @@
             </nav>
         </div>
     </header>
+    <!-- End Of Navbar Container -->
+    <!-- Main Container : HTML Tutorials -->
     <main>
         <div class="tutorials-container">
             <h2 class="tutorials-title">Html Tutorials</h2>
+            <p class="guidance-sentence">Click on the image to go to the video..</p>
             <div class="tutorial-videos">
-                <h3>Popular Channels :</h3>
+                <h3>Playlists :</h3>
                 <div class="swiper-container">
                    <div class="swiper swiper-one">
                       <div class="swiper-wrapper" id="swiper_wrapper">
@@ -87,158 +90,20 @@
                 <h3>Long Tutorials :</h3>
                 <div class="swiper-container">
                     <div class="swiper swiper-two">
-                       <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="html photo with a person.jpg" class="image-slide">
-                            <div class="text-slide">
-                               <h2 class="title-channel">Merciful Servant</h2>
-                               <p class="number-of-followers">4.33 M</p>
-                            </div>
-                         </div>
-                         <div class="swiper-slide">
-                            <img src="html photo with a person.jpg" class="image-slide">
-                            <div class="text-slide">
-                               <h2 class="title-channel">Merciful Servant</h2>
-                               <p class="number-of-followers">4.33 M</p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                             <img src="html photo with a person.jpg" class="image-slide">
-                            <div class="text-slide">
-                               <h2 class="title-channel">Merciful Servant</h2>
-                               <p class="number-of-followers">4.33 M</p>
-                            </div>
-                         </div>
-                         <div class="swiper-slide">
-                            <img src="why-you-should-choose-html5.jpg" class="image-slide">
-                           <div class="text-slide">
-                               <h2 class="title-channel">Merciful Servant</h2>
-                               <p class="number-of-followers">4.33 M</p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="html photo witth a hand.jpg" class="image-slide">
-                           <div class="text-slide">
-                               <h2 class="title-channel">Merciful Servant</h2>
-                               <p class="number-of-followers">4.33 M</p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="computer.jpg" class="image-slide">
-                            <div class="text-slide">
-                               <h2 class="title-channel">Merciful Servant</h2>
-                               <p class="number-of-followers">4.33 M</p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="science.png" class="image-slide">
-                            <div class="text-slide">
-                                <h2 class="title-channel">Merciful Servant</h2>
-                                <p class="number-of-followers">4.33 M</p>
-                            </div>
-                         </div>
-                         <div class="swiper-slide">
-                            <img src="html photo with green background.png" class="image-slide">
-                            <div class="text-slide">
-                               <h2 class="title-channel">Merciful Servant</h2>
-                               <p class="number-of-followers">4.33 M</p>
-                            </div>
-                         </div>
-                         <div class="swiper-slide">
-                            <img src="html photo with blue bg.jpg" class="image-slide">
-                            <div class="text-slide">
-                               <h2 class="title-channel">Merciful Servant</h2>
-                               <p class="number-of-followers">4.33 M</p>
-                            </div>
+                       <div class="swiper-wrapper" id="longTutorials-swiper-wrapper">
+                        
                        </div>
-                       <div class="swiper-slide">
-                            <img src="html photo with black bg.png" class="image-slide">
-                            <div class="text-slide">
-                               <h2 class="title-channel">Merciful Servant</h2>
-                               <p class="number-of-followers">4.33 M</p>
-                            </div>
-                        </div> 
-                       </div>
-                    </div>
+                    </div>   
                     <div class="button-next-two swiper-button-next"></div>
                     <div class="button-prev-two swiper-button-prev"></div>
                 </div>
             </div>
             <div class="tutorial-videos">
-                <h3>Playlists :</h3>
+                <h3> Tips and Tricks :</h3>
                 <div class="swiper-container">
                     <div class="swiper swiper-three">
-                       <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="html photo with a person.jpg" class="image-slide">
-                            <div class="text-slide">
-                               <h2 class="title-channel">Merciful Servant</h2>
-                               <p class="number-of-followers">4.33 M</p>
-                            </div>
-                         </div>
-                         <div class="swiper-slide">
-                            <img src="html photo with a person.jpg" class="image-slide">
-                            <div class="text-slide">
-                               <h2 class="title-channel">Merciful Servant</h2>
-                               <p class="number-of-followers">4.33 M</p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                             <img src="html photo with a person.jpg" class="image-slide">
-                            <div class="text-slide">
-                               <h2 class="title-channel">Merciful Servant</h2>
-                               <p class="number-of-followers">4.33 M</p>
-                            </div>
-                         </div>
-                         <div class="swiper-slide">
-                            <img src="why-you-should-choose-html5.jpg" class="image-slide">
-                           <div class="text-slide">
-                               <h2 class="title-channel">Merciful Servant</h2>
-                               <p class="number-of-followers">4.33 M</p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="html photo witth a hand.jpg" class="image-slide">
-                           <div class="text-slide">
-                               <h2 class="title-channel">Merciful Servant</h2>
-                               <p class="number-of-followers">4.33 M</p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="computer.jpg" class="image-slide">
-                            <div class="text-slide">
-                               <h2 class="title-channel">Merciful Servant</h2>
-                               <p class="number-of-followers">4.33 M</p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="science.png" class="image-slide">
-                            <div class="text-slide">
-                                <h2 class="title-channel">Merciful Servant</h2>
-                                <p class="number-of-followers">4.33 M</p>
-                            </div>
-                         </div>
-                         <div class="swiper-slide">
-                            <img src="html photo with green background.png" class="image-slide">
-                            <div class="text-slide">
-                               <h2 class="title-channel">Merciful Servant</h2>
-                               <p class="number-of-followers">4.33 M</p>
-                            </div>
-                         </div>
-                         <div class="swiper-slide">
-                            <img src="html photo with blue bg.jpg" class="image-slide">
-                            <div class="text-slide">
-                               <h2 class="title-channel">Merciful Servant</h2>
-                               <p class="number-of-followers">4.33 M</p>
-                            </div>
-                       </div>
-                       <div class="swiper-slide">
-                            <img src="html photo with black bg.png" class="image-slide">
-                            <div class="text-slide">
-                               <h2 class="title-channel">Merciful Servant</h2>
-                               <p class="number-of-followers">4.33 M</p>
-                            </div>
-                        </div>   
+                       <div class="swiper-wrapper" id="tipsTricksVideo">
+                       
                        </div>
                     </div>
                     <div class="button-next-three swiper-button-next"></div>
@@ -247,8 +112,48 @@
             </div>
         </div>
     </main>
-    <!-- End Of Navbar Container -->
+    <!-- End Of Main Container -->
+    <!-- Footer Container -->
+    <footer>
+        <div class="imageForFooter">
+            <img src="HTML css js img for footer.jpg" alt="image" class="footer_image">
+        </div>
+        <div class="end-of-page">
+            <div class="title">
+                <h2 class="asking_title">Didn't find what you're looking for?</h2>
+            </div>    
+            <p class="footer-paragh">If you didn't find your perfect course or face any difficulty in picking which course suits you best , Contact us we are readily available to help you with your doubts</p>
+            <div class="contact">
+                <div class="tel social_contact">
+                    <div class="tel_contact contact-details">
+                        <i class="fa-solid fa-phone icon"></i>
+                        <p class="info">+216 25607297</p>
+                    </div>
+                </div>
+                <div class="instagram social_contact">
+                    <div class="instagram_contact contact-details">
+                        <i class="fa-brands fa-instagram icon"></i>
+                        <p class="info">maryem8977</p>
+                    </div>
+                </div>
+                <div class="e-mail social_contact">
+                    <div class="e-mail_contact contact-details">
+                        <i class="fa-regular fa-envelope icon"></i>
+                        <p class="info">maryam377@gmail.com</p>
+                    </div>
+                </div>
+                <div class="facebook social_contact">
+                    <div class="facebook_contact contact-details">
+                        <i class="fa-brands fa-facebook-f icon"></i>
+                        <p class="info">maryem fatnassi</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Of Footer Container -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="HTML-Tutorials.js"></script>
+    <script type="module" src="YT Data API.js"></script>
+    <script type="module" src="HTML.Tutorials2.js"></script>
 </body>
 </html>

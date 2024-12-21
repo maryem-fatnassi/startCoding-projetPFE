@@ -169,3 +169,55 @@ https://www.googleapis.com/youtube/v3/videos=snippet&id=VkWJQe_EsjQ&key=AIzaSyB1
       'qz0aGYrr
       'HcOc7P5BMi4&t',
       'pQN-pnXPaVg'
+
+
+      <div class="navbar-small-screen" id="side-navbar">
+        <nav class="column_navbar">
+            <div class="item-one">
+               <i class="fa-solid fa-lightbulb" id="lightbulb"></i>
+               <a href="#" class="info">Tutorials</a>
+               <i class="fa-solid fa-arrow-down" id="arrow-icon" onclick="selectedDropDownIcon()"></i>
+               <div id="collapse">
+                <a href="#">Html</a>
+                <a href="#">Css</a>
+                <a href="#">JavaScript</a>
+               </div>
+            </div>
+            <div class="navbar-item">
+                <i class="fa-solid fa-folder"></i>
+                <a href="#" class="info">Projects</a>
+            </div>
+            <div class="navbar-item">
+                <i class="fa-solid fa-map"></i>
+                <a href="#" class="info">Roadmaps</a>
+            </div>
+            <div class="navbar-item">
+                <i class="fa-solid fa-comments"></i>
+                <a href="#" class="info">Contact</a>
+            </div>
+        </nav>
+    </div>      
+
+
+    // Navbar Container..
+    // show tutorials menu in large screen..
+    const arrowDown_icon = document.getElementById('arrowDown_icon');
+    const tutorials_select = document.getElementById('tutorials-menu');
+    function selectedIcon(){
+      tutorials_select.classList.toggle('active');
+      arrowDown_icon.classList.toggle('rotate');
+    }
+    // show tutorials menu in small screen..
+    const arrowDownIcon = document.getElementById('arrow-icon');
+    const tutorialsMenu = document.getElementById('collapse');
+    function selectedDropDownIcon(){
+      tutorialsMenu.classList.toggle('activeMenu');
+      arrowDownIcon.classList.toggle('rotateIcon');
+    }
+   // show sideBar menu in small screen..
+   const sideBar = document.getElementById('side-navbar');
+   function selectedBars(){
+      sideBar.classList.toggle('show-sidebar');
+    }
+  // End Of Navbar..
+  

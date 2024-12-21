@@ -6,9 +6,33 @@ export function selectedIcon(clickIcon){
   arrowDown_icon.classList.toggle('rotate');
 }
 
-// Using Swiper in HTML tutorials 
+// Using YT Data Api in to create HTML CSS JS Tutorials 
     // * Playlists *
 const apiKey =  'AIzaSyB1bR4Vc2gsucWVY7SokFXObkIUKug6M04';
+ // This function converts the follower count into a short format :
+    function formatNumber(number){
+    if(number >= 1000000){
+      return (number / 1000000).toFixed(1).replace(/\.0$/,'') + 'M';
+    }
+    else if(number >= 1000){
+     return(number / 1000).toFixed(1).replace(/\.0$/,'') + 'K';
+    }
+    else{
+     return number;
+    }
+  };
+  // This function converts video duration into HH:MM:SS format :
+   function formatVideoDuration(duration){
+   const match = duration.match(/PT(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)/);
+   const hours = match[1] ? match[1] : '0';
+   const minutes = match[2] ? match[2] : '0';
+   const seconds = match[3] ? match[3] : '0';
+   return [
+     String(hours).padStart(2,"0"),
+     String(minutes).padStart(2,"0"),
+     String(seconds).padStart(2,"0"),
+    ].join(":");
+  };
 export function fetchPlaylistsData(ids){
     const url = `https://www.googleapis.com/youtube/v3/playlists?part=snippet,contentDetails&id=${ids.join(",")}&key=${apiKey}`;
     fetch(url)
@@ -59,30 +83,8 @@ export function fetchPlaylistsData(ids){
 };
 
 //** Use YT Data API to create long tutorials slider **
-function formatNumber(number){
-  if(number >= 1000000){
-    return (number / 1000000).toFixed(1).replace(/\.0$/,'') + 'M';
-  }
-  else if(number >= 1000){
-    return(number / 1000).toFixed(1).replace(/\.0$/,'') + 'K';
-  }
-  else{
-    return number;
-  }
-}
 export function fetchLongTutorialsData(ids){
   const videosUrl = `https://www.googleapis.com/youtube/v3/videos?part=contentDetails,snippet,statistics&id=${ids.join(",")}&key=${apiKey}`;
-  function formatVideoDuration(duration){
-    const match = duration.match(/PT(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)/);
-    const hours = match[1] ? match[1] : '0';
-    const minutes = match[2] ? match[2] : '0';
-    const seconds = match[3] ? match[3] : '0';
-    return [
-      String(hours).padStart(2,"0"),
-      String(minutes).padStart(2,"0"),
-      String(seconds).padStart(2,"0"),
-    ].join(":");
-  };
   fetch(videosUrl)
   .then(  
     response => response.json()
@@ -92,6 +94,7 @@ export function fetchLongTutorialsData(ids){
     
       data.items.forEach(
       video => {
+        console.log(video)
                 const videoImage = video.snippet.thumbnails.default.url;
                 const videoName = video.snippet.title;
                 const viewCount = video.statistics.viewCount;

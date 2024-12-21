@@ -8,13 +8,13 @@ const arrowDown_icon = document.getElementById('arrowDown_icon');
 arrowDown_icon.addEventListener('click',selectedIcon);
 
 // Main Container..
-  // Using Swiper in HTML tutorials :
+  // Using Swiper in CSS tutorials :
     // * Playlists *
     const swiperOne = new Swiper(
         '.swiper-one',{
           loop: true,
           slidesPerView : 3,
-          spaceBetween : 70,
+          spaceBetween : 80,
           navigation:{
             nextEl: '.button-next-one',
             prevEl:'.button-prev-one',
@@ -25,7 +25,7 @@ arrowDown_icon.addEventListener('click',selectedIcon);
       const swiperTwo = new Swiper('.swiper-two',{
         loop: true,
         slidesPerView : 3,
-        spaceBetween : 70,
+        spaceBetween : 80,
         navigation:{
           nextEl: '.button-next-two',
           prevEl:'.button-prev-two',
@@ -35,7 +35,7 @@ arrowDown_icon.addEventListener('click',selectedIcon);
        const swiperThree = new Swiper('.swiper-three',{
         loop: true,
         slidesPerView : 3,
-        spaceBetween : 70,
+        spaceBetween : 80,
         navigation:{
           nextEl: '.button-next-three',
           prevEl:'.button-prev-three',
@@ -65,11 +65,9 @@ arrowDown_icon.addEventListener('click',selectedIcon);
 
     //** Use YT Data API to create Tips & Tricks slider **
      const tipsTricksVideosIds =[
-       'I_AUK0Z6D68',
        'Qhaz36TZG5Y',
        '44FTAS-qT8Q',
        'PL3Odw-k8W4',
-       '2KWdT4PKXgY',
        'CxC925yUxSI'
       ];
     fetchTipsTricksData(tipsTricksVideosIds);  

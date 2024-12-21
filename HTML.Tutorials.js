@@ -13,7 +13,7 @@ arrowDown_icon.addEventListener('click',selectedIcon);
       '.swiper-one',{
         loop: true,
         slidesPerView : 3,
-        spaceBetween : 70,
+        spaceBetween : 80,
         navigation:{
           nextEl: '.button-next-one',
           prevEl:'.button-prev-one',
@@ -24,7 +24,7 @@ arrowDown_icon.addEventListener('click',selectedIcon);
     const swiperTwo = new Swiper('.swiper-two',{
       loop: true,
       slidesPerView : 3,
-      spaceBetween : 70,
+      spaceBetween : 80,
       navigation:{
         nextEl: '.button-next-two',
         prevEl:'.button-prev-two',
@@ -34,7 +34,7 @@ arrowDown_icon.addEventListener('click',selectedIcon);
      const swiperThree = new Swiper('.swiper-three',{
       loop: true,
       slidesPerView : 3,
-      spaceBetween : 70,
+      spaceBetween : 80,
       navigation:{
         nextEl: '.button-next-three',
         prevEl:'.button-prev-three',
@@ -48,7 +48,6 @@ arrowDown_icon.addEventListener('click',selectedIcon);
      'PLP9IO4UYNF0VdAajP_5pYG-jG2JRrG72s',
      'PL4cUxeGkcC9ibZ2TSBaGGNrgh4ZgYE6Cc',
      'PLZPZq0r_RZOPoNttk9beDhO_Bu5DA-xwP',
-     'PLWKjhJtqVAbnSe1qUNMG7AbPmjIG54u88',
      'PL7TLF4T4Tq2RNvYzF45yOeFi-O1KRAWtu'
     ];
 
@@ -76,3 +75,4 @@ arrowDown_icon.addEventListener('click',selectedIcon);
       'VkWJQe_EsjQ',
     ];
     fetchTipsTricksData(tipsTricksVideosIds);
+   

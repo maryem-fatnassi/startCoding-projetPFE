@@ -9,7 +9,7 @@ body{font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucid
 footer{
     height: 60px;
     display: grid;
-    margin-top: 100px;
+    margin-top: 250px;
 }
 footer .end-of-page{
     padding: 18px 15px;

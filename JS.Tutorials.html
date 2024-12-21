@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>JS Tutorials</title>
     <link rel="stylesheet" href="AllTutorials.css">
     <link rel="stylesheet" href="Navbar.css">
     <link rel="stylesheet" href="footer.css">
@@ -12,42 +12,39 @@
 </head>
 <body>
     <!-- Navbar Container -->
-    <header>
-        <div>
-            <img src="logo.jpeg" alt="logo" id="logo">
-        </div>
-        <div class="navbar">
-            <nav class="row_navbar">
-                <div class="tutorials navigation">
-                    <ul class="select button">
-                        <li>Tutorials</li>
-                        <i class="fa-solid fa-arrow-down" id="arrowDown_icon"></i>
-                    </ul>
-                    <ul class="select tutorials_select" id="tutorials-menu">
-                        <li><a href="JS.Tutorials.html">JavaScript</a></li>
-                        <li><a href="CSS-Tutorials.html">Css</a></li>
-                    </ul>
-                </div>
-                <div class="nav navigation">
-                    Projects
-                </div>
-                <div class="nav navigation">
-                    Roadmaps
-                </div>
-                <div class="nav navigation">
-                    Contact 
-                </div>
-                <div class="bars_icon">
-                    <i class="fa-solid fa-bars" id="navbar-toggle" onclick="selectedBars()"></i>
-                </div>
-            </nav>
-        </div>
-    </header>
+        <header>
+            <div>
+                <img src="logo.jpeg" alt="logo" id="logo">
+            </div>
+            <div class="navbar">
+                <nav class="row_navbar">
+                    <div class="tutorials navigation">
+                        <ul class="select button">
+                            <li>Tutorials</li>
+                            <i class="fa-solid fa-arrow-down" id="arrowDown_icon"></i>
+                        </ul>
+                        <ul class="select tutorials_select" id="tutorials-menu">
+                            <li><a href="HTML-Tutorials.html">Html </a></li>
+                            <li><a href="CSS-Tutorials.html">Css </a></li>
+                        </ul>
+                    </div>
+                    <div class="nav navigation">
+                        Projects
+                    </div>
+                    <div class="nav navigation">
+                        Roadmaps
+                    </div>
+                    <div class="nav navigation">
+                        Contact 
+                    </div>
+                </nav>    
+            </div>        
+        </header> 
     <!-- End Of Navbar Container -->
-    <!-- Main Container : HTML Tutorials -->
+    <!-- Main Container : JS Tutorials -->
     <main>
         <div class="tutorials-container">
-            <h2 class="tutorials-title">Html Tutorials</h2>
+            <h2 class="tutorials-title">JavaScript Tutorials</h2>
             <p class="guidance-sentence">Click on the image to go to the video..</p>
             <div class="tutorial-videos">
                 <h3>Playlists :</h3>
@@ -126,9 +123,8 @@
             </div>
         </div>
     </footer>
-    <!-- End Of Footer Container -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script type="module" src="YT Data API.js"></script>
-    <script type="module" src="HTML.Tutorials.js"></script>
+    <script type="module" src="JS.Tutorials.js"></script>
 </body>
 </html>

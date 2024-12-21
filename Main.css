@@ -309,6 +309,7 @@ main .section_one .introduction_icon #code{
     font-size: 18px;
     font-style: italic;
     padding-bottom: 8px;
+    color: purple;
 }
 .section-four .code-editors-container .the-code-editor div a:hover{
     color: blue;

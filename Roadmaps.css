@@ -1,0 +1,85 @@
+ html,
+  body {
+    position: relative;
+    height: calc(100vh - 250px);
+  }
+
+  body {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+  }
+
+  .swiper {
+    width: 90%;
+    height: 100%;
+    background-color :white;
+    margin-top: 170px;
+  }
+
+  .swiper-slide{
+    font-size: 18px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 40px 60px;
+    display: flex !important;
+    justify-content: space-between;
+  }
+
+  .swiper-slide .title {
+    font-size: 41px;
+    font-weight: bolder;
+    color: brown;
+    font-style: italic;
+    font-family:cursive;
+    margin-left: 40px;
+  }
+
+  .swiper-slide .text {
+    font-size: 15px;
+    max-width: 400px;
+    line-height: 1.5;
+    margin-top: 30px;
+    font-weight: bold;
+    margin-left: 40px;
+  }
+  .website-link{
+    margin-left: 40px;
+    margin-top: 65px;
+    padding: 8px 45px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bolder;
+    font-style: italic;
+    background-color:darkgreen;
+    color: white;
+    box-shadow: 3px 3px 5px black;
+  }
+  #website-css-link, #website-js-link{
+    background-color:burlywood;
+  }
+  #website-css-link a, #website-js-link a{
+    color: #000;
+  }
+  .website-link:hover, #website-css-link:hover, #website-js-link:hover{
+    background-color:#000;
+  }
+  #website-css-link:hover a, #website-js-link:hover a{
+    color: #fff;
+  }
+  .swiper-button-next, .swiper-button-prev{
+    color: black !important;
+  }
+  .right-side img{
+    width: 450px;
+    height: 240px;
+    margin-top: 60px;
+    margin-right: 70px;
+    border: 1px solid black;
+    padding: 8px 10px 5px 8px;
+    border-radius: 8px;
+  }

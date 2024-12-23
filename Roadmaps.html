@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Roadmaps.css">
+    <link rel="stylesheet" href="Navbar.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+</head>
+<body>
+    <!-- Navbar Container -->
+    <header>
+        <div>
+            <img src="logo.jpeg" alt="logo" id="logo">
+        </div>
+        <div class="navbar">
+           <nav class="row_navbar">
+                <div class="tutorials navigation">
+                    <ul class="select button">
+                        <li>Tutorials</li>
+                        <i class="fa-solid fa-arrow-down" id="arrowDown_icon" onclick="selectedIcon()"></i>
+                    </ul>
+                    <ul class="select tutorials_select" id="tutorials-menu" style="height: 110px;">
+                        <li><a href="HTML-Tutorials.html">Html </a></li>
+                        <li><a href="CSS-Tutorials.html">Css </a></li>
+                        <li><a href="JS.Tutorials.html">JavaScript </a></li>
+                    </ul>
+                </div>
+                <div class="nav navigation">
+                    <a href="Projects.html"> Projects</a>
+                </div>
+                <div class="nav navigation">
+                    <a href="Roadmaps.html">Roadmaps</a>
+                </div>
+                <div class="nav navigation">
+                    Contact 
+                </div>
+            </nav>    
+        </div>        
+    </header> 
+    <!-- End Of Navbar Container -->
+    <!-- Main Container -->
+  <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper">
+    <div class="swiper-wrapper">
+       <div class="swiper-slide">
+           <div class="left-side">
+             <div class="title" data-swiper-parallax="-300">HTML Roadmap..</div>
+             <div class="text" data-swiper-parallax="-100">
+                  <p>
+                     When you click on the "Visit Roadmap" button, you will be directed to website with a detailed HTML learning roadmap.
+                     step-by-step lessons make it easier to build professional web pages.
+                  </p>
+             </div>
+             <button class="website-link"><a href="https://www.tutorialspoint.com/html/html_roadmap.htm">Visit Roadmap</a></button>
+           </div>
+           <div class="right-side">
+             <img src="Capture html roadmap.PNG" >
+           </div>
+      </div>
+      <div class="swiper-slide">
+         <div class="left-side">
+              <div class="title" data-swiper-parallax="-300" style="color: darkgoldenrod;">CSS Roadmap..</div>
+              <div class="text" data-swiper-parallax="-100">
+                   <p>
+                     When you click on the "Visit Roadmap" button, you will be directed to website with a detailed CSS learning roadmap.
+                     step-by-step lessons make it easier to build professional web pages.
+                   </p>
+              </div>
+              <button class="website-link"  id="website-css-link"><a href="https://roadmap.sh/r/css-6nqag" >Visit Roadmap</a></button>
+          </div>
+          <div class="right-side">
+             <img src="Capture css roadmap.PNG" >
+           </div>
+       </div>
+       <div class="swiper-slide">
+           <div class="left-side">
+             <div class="title" data-swiper-parallax="-300" style="color: blue;">JavaScript Roadmap..</div>
+             <div class="text" data-swiper-parallax="-100">
+                  <p>
+                     When you click on the "Visit Roadmap" button, you will be directed to website with a detailed JavaScript learning roadmap.
+                     step-by-step lessons make it easier to build professional web pages.
+                  </p>
+             </div>
+             <button class="website-link" id="website-js-link"><a href="https://roadmap.sh/javascript" >Visit Roadmap</a></button>
+         </div>
+         <div class="right-side">
+             <img src="Capture js roadmap.PNG" >
+          </div>
+        </div>
+    </div>
+    <div class="swiper-button-next button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+    <!-- Footer Container -->
+    <footer style="margin-top: 170px;">
+        <div class="imageForFooter">
+          <img src="HTML css js img for footer.jpg" class="footer_image">
+        </div>
+        <div class="end-of-page">
+            <div class="title">
+                <h2 class="asking_title">Didn't find what you're looking for?</h2>
+            </div>    
+            <p class="footer-paragh">If you didn't find your perfect course or face any difficulty in picking which course suits you best , Contact us we are readily available to help you with your doubts</p>
+            <div class="contact">
+                <div class="tel social_contact">
+                    <div class="tel_contact contact-details">
+                        <i class="fa-solid fa-phone icon"></i>
+                        <p class="info">+216 25607297</p>
+                    </div>
+                </div>
+                <div class="instagram social_contact">
+                    <div class="instagram_contact contact-details">
+                        <i class="fa-brands fa-instagram icon"></i>
+                        <p class="info">maryem8977</p>
+                    </div>
+                </div>
+                <div class="e-mail social_contact">
+                    <div class="e-mail_contact contact-details">
+                        <i class="fa-regular fa-envelope icon"></i>
+                        <p class="info">maryam377@gmail.com</p>
+                    </div>
+                </div>
+                <div class="facebook social_contact">
+                    <div class="facebook_contact contact-details">
+                        <i class="fa-brands fa-facebook-f icon"></i>
+                        <p class="info">maryem fatnassi</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </footer>
+    <!-- End Of Footer Container -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="Roadmaps.js"></script>
+</body>
+</html>

@@ -3,48 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Tutorials</title>
-    <link rel="stylesheet" href="AllTutorials.css">
-    <link rel="stylesheet" href="Navbar.css">
-    <link rel="stylesheet" href="footer.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Css Files/AllTutorials.css">
+    <link rel="stylesheet" href="/Css Files/Navbar.css">
+    <link rel="stylesheet" href="/Css Files/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 </head>
 <body>
-    <!-- Navbar Container -->
-    <header>
+     <!-- Navbar Container -->
+     <header>
         <div>
-            <img src="logo.jpeg" alt="logo" id="logo">
+            <img src="/Images/logo.jpeg" alt="logo" id="logo">
         </div>
         <div class="navbar">
             <nav class="row_navbar">
+                <div class="nav navigation">
+                    <a href="/Html Files/Home.html">Home</a>
+                </div>
                 <div class="tutorials navigation">
                     <ul class="select button">
                         <li>Tutorials</li>
-                        <i class="fa-solid fa-arrow-down" id="arrowDown_icon"></i>
+                        <i class="fa-solid fa-arrow-down" id="arrowDown_icon" onclick="selectedIcon()"></i>
                     </ul>
-                    <ul class="select tutorials_select" id="tutorials-menu">
-                        <li><a href="HTML-Tutorials.html">Html </a></li>
-                        <li><a href="JS.Tutorials.html"> JavaScript </a></li>
+                    <ul class="select tutorials_select" id="tutorials-menu" style="height: 80px;">
+                        <li><a href="/Html Files/CSS-Tutorials.html"> Css </a></li>
+                        <li><a href="/Html Files/JS.Tutorials.html">JavaScript </a></li>
                     </ul>
                 </div>
                 <div class="nav navigation">
-                    Projects
+                    <a href="/Html Files/Projects.html">Projects</a>
                 </div>
                 <div class="nav navigation">
-                    Roadmaps
+                    <a href="/Html Files/Roadmaps.html">Roadmaps</a>
                 </div>
-                <div class="nav navigation">
+                <div class="nav navigation" id="contact" >
                     Contact 
                 </div>
-            </nav>    
-        </div>        
-    </header> 
+            </nav>
+        </div>
+    </header>
     <!-- End Of Navbar Container -->
-    <!-- Main Container : CSS Tutorials -->
+    <!-- Main Container : HTML Tutorials -->
     <main>
         <div class="tutorials-container">
-            <h2 class="tutorials-title">CSS Tutorials</h2>
+            <h2 class="tutorials-title">Html Tutorials</h2>
             <p class="guidance-sentence">Click on the image to go to the video..</p>
             <div class="tutorial-videos">
                 <h3>Playlists :</h3>
@@ -86,9 +89,9 @@
     </main>
     <!-- End Of Main Container -->
     <!-- Footer Container -->
-    <footer>
+    <footer id="footer">
         <div class="imageForFooter">
-            <img src="HTML css js img for footer.jpg" alt="image" class="footer_image">
+            <img src="/Images/HTML css js img for footer.jpg" alt="image" class="footer_image">
         </div>
         <div class="end-of-page">
             <div class="title">
@@ -123,9 +126,9 @@
             </div>
         </div>
     </footer>
-    <!-- End Of Footer Container -->           
+    <!-- End Of Footer Container -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script type="module" src="YT Data API.js"></script>
-    <script type="module" src="CSS-Tutorials.js"></script>
+    <script type="module" src="/Js Files/YT Data API.js"></script>
+    <script type="module" src="/Js Files/HTML.Tutorials.js"></script>
 </body>
 </html>

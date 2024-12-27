@@ -4,9 +4,14 @@ import { fetchTipsTricksData } from './YT Data API.js';
 import { selectedIcon } from './YT Data API.js';
 // Navbar Container..
   // Click arrow-Down icon to show and hide menu :
-const arrowDown_icon = document.getElementById('arrowDown_icon');
-arrowDown_icon.addEventListener('click',selectedIcon);
-
+   const arrowDown_icon = document.getElementById('arrowDown_icon');
+   arrowDown_icon.addEventListener('click',selectedIcon);
+  // Navigate to the 'contact' section within the same page using the ID..
+   function navigateToContact(){
+   window.location.href = "#footer";
+   }
+  const contact = document.getElementById('contact');
+  const footer = contact.addEventListener('click',navigateToContact);
 // Main Container..
   // Using Swiper in JS tutorials :
     // * Playlists *

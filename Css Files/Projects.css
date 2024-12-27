@@ -14,7 +14,7 @@ body {
 .swiper {
   width: 320px;
   height: 380px;
-  margin-top: 320px;
+  margin-top: 360px;
 }
 
 .swiper-slide {
@@ -45,7 +45,7 @@ body {
 }
 
 .swiper-slide:nth-child(3n) {
-  background-color: sienna;
+  background-color:khaki;
 }
 
 .swiper-slide:nth-child(4n) {
@@ -77,9 +77,8 @@ body {
 }
 
 .swiper-slide img{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
+    width: 140px;
+    height: 120px;
     margin-top: 15px;
 }
 .swiper-slide h3{
@@ -99,7 +98,7 @@ body {
     border-radius: 10px;
     padding: 8px 10px;
     border: none;
-    margin-top: 20px;
+    margin-top: 30px;
     background-color: black;
 }
 .button-watch-video a{
@@ -113,10 +112,4 @@ body {
 }
 .card-four p, .card-two p, .card-three p, .card-five p, .card-six p, .card-nine p, .card-ten p{
   line-height: 1.5;
-}
-.card-four button{
-   margin-top: 40px;
-}
-.card-two button, .card-three button, .card-six button, .card-five button, .card-ten button{
-  margin-top: 60px;
 }

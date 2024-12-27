@@ -15,3 +15,10 @@ AOS.init(
         duration:2500,
     }
 );
+
+// Navigate to the 'contact' section within the same page using the ID..
+function navigateToContact(){
+  window.location.href = "#footer";
+}
+  const contact = document.getElementById('contact');
+  const footer = contact.addEventListener('click',navigateToContact);

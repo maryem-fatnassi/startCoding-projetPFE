@@ -19,4 +19,3 @@
     sideBar.classList.toggle('show-sidebar');
   }
 // End Of Navbar..
-

@@ -4,44 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="Main.css">
-    <link rel="stylesheet" href="Navbar.css">
-    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="/Css Files/Home.css">
+    <link rel="stylesheet" href="/Css Files/Navbar.css">
+    <link rel="stylesheet" href="/Css Files/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-    
 </head>
 <body>
      <!-- Navbar Container -->
     <header>
         <div>
-            <img src="logo.jpeg" alt="logo" id="logo">
+            <img src="/Images/logo.jpeg" alt="logo" id="logo">
         </div>
         <div class="navbar">
             <nav class="row_navbar">
+                <div class="nav navigation">
+                    <a href="/Html Files/Home.html">Home</a>
+                </div>
                 <div class="tutorials navigation">
                     <ul class="select button">
                         <li>Tutorials</li>
                         <i class="fa-solid fa-arrow-down" id="arrowDown_icon" onclick="selectedIcon()"></i>
                     </ul>
                     <ul class="select tutorials_select" id="tutorials-menu" style="height: 110px;">
-                        <li><a href="HTML-Tutorials.html"> Html </a></li>
-                        <li><a href="CSS-Tutorials.html"> Css </a></li>
-                        <li><a href="JS.Tutorials.html">JavaScript </a></li>
+                        <li><a href="/Html Files/HTML-Tutorials.html"> Html </a></li>
+                        <li><a href="/Html Files/CSS-Tutorials.html"> Css </a></li>
+                        <li><a href="/Html Files/JS.Tutorials.html">JavaScript </a></li>
                     </ul>
                 </div>
                 <div class="nav navigation">
-                    Projects
+                    <a href="/Html Files/Projects.html">Projects</a>
                 </div>
                 <div class="nav navigation">
-                    Roadmaps
+                    <a href="/Html Files/Roadmaps.html">Roadmaps</a>
                 </div>
-                <div class="nav navigation">
+                <div class="nav navigation" id="contact" >
                     Contact 
-                </div>
-                <div class="bars_icon">
-                    <i class="fa-solid fa-bars" id="navbar-toggle" onclick="selectedBars()"></i>
                 </div>
             </nav>
         </div>
@@ -56,7 +55,7 @@
                 <p class="introduction_paragraph">Find everything you need to start coding-all in one place .Our platform brings together the best YouTube videos to help you learn <span style="color: blue; font-size: 20px;">Html Css & JavaScript</span> , from beginner basics to advanced concepts.Additionally, we provide tutorials,hands-on projects,and detailed roadmaps to assist you in your learning journey.  </p>
             </div>
             <div class="introduction_icon">
-               <img src="code img for intro.jpg" id="code">
+               <img src="/Images/code img for intro.jpg" id="code">
             </div>
         </section>
         <!-- Section Two : definition of HTML CSS & JavaScript and the relationship between them -->
@@ -66,7 +65,7 @@
             <div class="definition-container">
                 <div class="definition" id="html-definition">
                     <div class="definition-image">
-                        <img src="html-logo.png" alt="html-logo">
+                        <img src="/Images/html-logo.png" alt="html-logo">
                     </div>
                     <div class="definition-text">
                         <h4><span class="color-title">HTML</span>(<span class="color-title">H</span>ypertext<span class="color-title">M</span>arkup<span class="color-title">L</span>anguage)</h4>
@@ -79,7 +78,7 @@
                 </div>
                 <div class="definition">
                     <div class="definition-image">
-                        <img src="css-logo.PNG" alt="css-logo">
+                        <img src="/Images/css-logo.PNG" alt="css-logo">
                     </div>
                     <div class="definition-text">
                         <h4> <span class="color-title">CSS</span>(<span class="color-title">C</span>ascading<span class="color-title">S</span>tyle<span class="color-title">S</span>heets)</h4>
@@ -91,7 +90,7 @@
                 </div>
                 <div class="definition" id="javascript-definition">
                     <div class="definition-image">
-                        <img src="js-logo.png" alt="js-logo">
+                        <img src="/Images/js-logo.png" alt="js-logo">
                     </div>
                     <div class="definition-text">
                         <h4><span class="color-title">JavaScript</span></h4>
@@ -107,15 +106,15 @@
                 <h2 class="relationship-title">The Relationship Between Css Html and JavaScript</h2>     
                 <div class="connection-container">
                     <div class="relationship" id="html-relationship">
-                        <img src="html-role.png" class="relationship-image">
+                        <img src="/Images/html-role.png" class="relationship-image">
                         <p class="relationship-text"><span class="color-title">Html</span> builds the instructure of the webpages</p>
                     </div>
                     <div class="relationship">
-                        <img src="css-role.png" class="relationship-image">
+                        <img src="/Images/css-role.png" class="relationship-image">
                         <p class="relationship-text"><span class="color-title">Css</span> styles and beautifies the appearance </p>
                     </div>
                     <div class="relationship" id="javascript-relationship">
-                        <img src="js-role.png" class="relationship-image">
+                        <img src="/Images/js-role.png" class="relationship-image">
                         <p class="relationship-text"><span class="color-title">JavaScript</span> adds interactivity and logic </p>
                     </div>
                 </div>
@@ -159,7 +158,7 @@
             <div class="code-editors-container box-one">
                 <div class="the-code-editor margin-to-editor" id="vs-code_container">
                     <div>
-                        <img src="vs code.png" class="editor_image">
+                        <img src="/Images/vs code.png" class="editor_image">
                     </div>
                     <div>
                         <ul class="pros-and-cons">
@@ -175,7 +174,7 @@
                 </div>
                 <div class="the-code-editor">
                     <div>
-                        <img src="atom.png" class="editor_image">
+                        <img src="/Images/atom.png" class="editor_image">
                     </div>
                     <div>
                         <ul class="pros-and-cons">
@@ -194,7 +193,7 @@
             <div class="code-editors-container box-two">
                 <div class="the-code-editor margin-to-editor">
                     <div>
-                        <img src="sublime text.webp" class="editor_image">
+                        <img src="/Images/sublime text.webp" class="editor_image">
                     </div>
                     <div>
                         <ul class="pros-and-cons">
@@ -211,7 +210,7 @@
                 </div>
                 <div class="the-code-editor" id="notepad++_container">
                     <div>
-                        <img src="notepad++.webp" class="editor_image">
+                        <img src="/Images/notepad++.webp" class="editor_image">
                     </div>
                     <div>
                         <ul class="pros-and-cons">
@@ -234,68 +233,68 @@
             <p class="self_development">To enhances your programming skills, I recommend learning these essential technologies.</p>
             <div class="technologies-name-container">
                 <div class="technology-item">
-                    <img src="Python-logo.png" class="technology_image">
+                    <img src="/Images/Python-logo.png" class="technology_image">
                     <p class="technology_name">Python</p>
                 </div>
                 <div class="technology-item">
-                    <img src="typescript-logo3.svg" class="technology_image" style="padding: 1px 1px 1px 1px;">
+                    <img src="/Images/typescript-logo3.svg" class="technology_image" style="padding: 1px 1px 1px 1px;">
                     <p class="technology_name">TypeScript</p>
                 </div>
                 <div class="technology-item">
-                    <img src="anglr js logo2.jpg" class="technology_image" style="padding: 5px 4px 4px 5px;">
+                    <img src="/Images/anglr js logo2.jpg" class="technology_image" style="padding: 5px 4px 4px 5px;">
                     <p class="technology_name">Angular.Js</p>
                 </div>
                 <div class="technology-item">
-                    <img src="react Js-logo.png" class="technology_image" style="padding: 1px 1px 1px 1px;">
+                    <img src="/Images/react Js-logo.png" class="technology_image" style="padding: 1px 1px 1px 1px;">
                     <p class="technology_name">React.Js</p>
                 </div>
                 <div class="technology-item">
-                    <img src="c-plus-plus-logo.webp" class="technology_image" style="padding: 1px 1px 1px 1px;">
+                    <img src="/Images/c-plus-plus-logo.webp" class="technology_image" style="padding: 1px 1px 1px 1px;">
                     <p class="technology_name">C++</p>
                 </div>
                 <div class="technology-item">
-                    <img src="scala logo.png" class="technology_image" style="padding: 5px 12px 4px 12px;">
+                    <img src="/Images/scala logo.png" class="technology_image" style="padding: 5px 12px 4px 12px;">
                     <p class="technology_name">Scala</p>
                 </div>
                 <div class="technology-item">
-                    <img src="scheme logo.png" class="technology_image" style="padding: 9px 5px 4px 10px;">
+                    <img src="/Images/scheme logo.png" class="technology_image" style="padding: 9px 5px 4px 10px;">
                     <p class="technology_name">Scheme</p>
                 </div>
                 <div class="technology-item">
-                    <img src="java-logo.png" class="technology_image" style="padding: 10px 8px 8px 10px;">
+                    <img src="/Images/java-logo.png" class="technology_image" style="padding: 10px 8px 8px 10px;">
                     <p class="technology_name">Java</p>
                 </div>
                 <div class="technology-item">
-                    <img src="PHP-logo.png" class="technology_image"  style="padding: 5px 4px 4px 5px;">
+                    <img src="/Images/PHP-logo.png" class="technology_image"  style="padding: 5px 4px 4px 5px;">
                     <p class="technology_name">PhP</p>
                 </div>
                 <div class="technology-item">
-                    <img src="rust logo.jpg" class="technology_image"  style="padding: 5px 4px 4px 5px;">
+                    <img src="/Images/rust logo.jpg" class="technology_image"  style="padding: 5px 4px 4px 5px;">
                     <p class="technology_name">Rust</p>
                 </div>
                 <div class="technology-item">
-                    <img src="bootstrap-logo.webp" class="technology_image"  style="padding: 5px 4px 4px 5px;">
+                    <img src="/Images/bootstrap-logo.webp" class="technology_image"  style="padding: 5px 4px 4px 5px;">
                     <p class="technology_name">Bootstrap</p>
                 </div>
                 <div class="technology-item">
-                    <img src="vue logo.png" class="technology_image"  style="padding: 15px 10px 10px 15px;">
+                    <img src="/Images/vue logo.png" class="technology_image"  style="padding: 15px 10px 10px 15px;">
                     <p class="technology_name">Vue.Js</p>
                 </div>
                 <div class="technology-item">
-                    <img src="Ember.js_Logo.png" class="technology_image"  style="padding: 10px 8px 8px 10px;">
+                    <img src="/Images/Ember.js_Logo.png" class="technology_image"  style="padding: 10px 8px 8px 10px;">
                     <p class="technology_name">Ember.Js</p>
                 </div>
                 <div class="technology-item">
-                    <img src="svelte js logo.png" class="technology_image"  style="padding: 10px 8px 8px 10px;">
+                    <img src="/Images/svelte js logo.png" class="technology_image"  style="padding: 10px 8px 8px 10px;">
                     <p class="technology_name">Svelte</p>
                 </div>
             </div>
         </section>
     </main>
         <!-- Footer Container -->
-        <footer>
+    <footer id="footer">
             <div class="imageForFooter">
-                <img src="HTML css js img for footer.jpg" alt="image" class="footer_image">
+                <img src="/Images/HTML css js img for footer.jpg" alt="image" class="footer_image">
             </div>
             <div class="end-of-page">
                 <div class="title">
@@ -329,9 +328,9 @@
                     </div>
                 </div>
             </div>
-        </footer>
+    </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script src="Navbar.js"></script>
-    <script src="startCoding.js"></script>
+    <script src="/Js Files/Navbar.js"></script>
+    <script src="/Js Files/Home.js"></script>
 </body>
 </html>
